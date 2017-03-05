@@ -1568,24 +1568,28 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-.container {
+.container,
+.login-container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .container {
+  .container,
+  .login-container {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container,
+  .login-container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container,
+  .login-container {
     width: 1170px;
   }
 }
@@ -6461,7 +6465,9 @@ button.close {
 .modal-header:before,
 .modal-header:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+.login-container:before,
+.login-container:after {
   content: " ";
   display: table;
 }
@@ -6480,7 +6486,8 @@ button.close {
 .pager:after,
 .panel-body:after,
 .modal-header:after,
-.modal-footer:after {
+.modal-footer:after,
+.login-container:after {
   clear: both;
 }
 .center-block {
