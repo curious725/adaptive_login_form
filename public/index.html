@@ -14,16 +14,34 @@
 
     <div class="login-container">
 
-    <h3>Log In</h3>
-    <p>I want to access an existing account.</p>
+      <h3>Log In</h3>
+      <p>I want to access an existing account.</p>
 
-    <script language='javascript'>var bool_58ac150eef9e6 = false;</script><form  action="/index.php" method="POST" autocomplete="off" onsubmit="if(bool_58ac150eef9e6){return false;}else{bool_58ac150eef9e6=true;return true;}"><div class='fieldCaption'>Email Address</div><div class='field'><input type='text' name='email' value=""/></div>
-<div class='fieldCaption'>Password</div><div class='field'><input type='password' name='password' value=""/></div>
-<div class='fieldCaption'></div><div class='field'><input type='hidden' name='rememberme' value='0' /><input type='checkbox' name='rememberme' value='1' /> Remember me</div>
-<input type='hidden' name='act' value='p_login' />
-<input type='submit' value='Submit' />
-</form>
-  </div><!-- end .login-container -->
+      <script language='javascript'>var bool_58ac150eef9e6 = false;</script>
+
+      <form  action="/index.php" method="POST" autocomplete="off" onsubmit="if(bool_58ac150eef9e6){return false;}else{bool_58ac150eef9e6=true;return true;}">
+
+        <div class='fieldCaption'>Email Address</div>
+        <div class='field'>
+          <input type='text' name='email' value=""/>
+        </div>
+
+        <div class='fieldCaption'>Password</div>
+        <div class='field'>
+          <input type='password' name='password' value=""/>
+        </div>
+
+        <div class='fieldCaption'></div>
+        <div class='field'>
+          <input type='hidden' name='rememberme' value='0' />
+          <input type='checkbox' name='rememberme' value='1' /> Remember me
+        </div>
+
+        <input type='hidden' name='act' value='p_login' />
+        <input type='submit' value='Submit' />
+
+      </form>
+    </div><!-- end .login-container -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
