@@ -6829,3 +6829,45 @@ fieldset[disabled] .btn-secondary.focus {
     margin-left: 8.33333333%;
   }
 }
+.login-container form #helprow {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  .login-container form #helprow {
+    float: left;
+    width: 75%;
+  }
+}
+.login-container form #helprow #checkboxfield {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 0;
+}
+@media (min-width: 992px) {
+  .login-container form #helprow #checkboxfield {
+    float: left;
+    width: 25%;
+  }
+}
+.login-container form #helprow label#lblforrememberme {
+  color: #CE0039;
+  font-weight: 200;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+.login-container form #helprow #forgot_password {
+  color: #CE0039;
+  display: block;
+  margin-top: 7px;
+}
+@media (min-width: 992px) {
+  .login-container form #helprow #forgot_password {
+    margin-left: 58.33333333%;
+  }
+}
