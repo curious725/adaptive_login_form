@@ -6871,3 +6871,27 @@ fieldset[disabled] .btn-secondary.focus {
     margin-left: 58.33333333%;
   }
 }
+.login-container form #fourthrow {
+  position: relative;
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.login-container form #fourthrow #submitbutton {
+  position: relative;
+  float: left;
+  width: 25%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 115px;
+  height: 100%;
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
