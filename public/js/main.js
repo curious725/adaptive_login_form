@@ -1,9 +1,10 @@
-function changePlaceholders() {
+function customizeInputs() {
   $(document).ready(function() {
 
     $("form :input[type=text],form :input[type=password]").each(function(index, elem){
       var fieldCaption = $(elem).parents(".field").prev(".fieldCaption");
       $(elem).attr("placeholder", fieldCaption.html());
+      $(elem).attr("class", "form-control");
     });
   });
 }
@@ -48,7 +49,7 @@ function wrapCheckboxText() {
 function customizeLoginButton() {
   $(document).ready(function() {
     $("input[type=submit]").attr("value", "Log In");
-    $("input[type=submit]").attr("class", "btn-secondary");
+    $("input[type=submit]").attr("class", "btn btn-secondary");
   });
 }
 
@@ -84,7 +85,7 @@ function updateButton() {
 });
 }
 
-changePlaceholders();
+customizeInputs();
 removeAllFieldCaptions();
 appendForgotPassword();
 wrapCheckboxText();
