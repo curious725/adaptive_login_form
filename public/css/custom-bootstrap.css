@@ -6796,3 +6796,7 @@ fieldset[disabled] .btn-secondary.focus {
   color: #363737;
   font-weight: 700;
 }
+.login-container p {
+  color: #A9ADAC;
+  font-weight: 600;
+}
