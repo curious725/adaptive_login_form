@@ -8,6 +8,12 @@
 
 .login-container {
     &:extend(.container);
+    min-width: 292px;
+    padding: 40px 15px;
+
+    input {
+        margin-bottom: 15px;
+    }
 
     h3 {
        color: #363737;
@@ -21,11 +27,14 @@
 
     form {
 
+
+
         #second_row {
 
             #emailfield {
                 input {
                     .make-md-column(4);
+                    .make-xs-column(12);
                 }
             }
 
@@ -33,15 +42,22 @@
                 input {
                     .make-md-column(4);
                     .make-md-column-offset(1);
+                    .make-xs-column(12);
                 }
             }
         }
         #helprow{
             .make-md-column(9);
+            .make-xs-column(12);
             padding-left: 0;
+
+            input {
+                margin-bottom: 10px;
+            }
 
             #checkboxfield {
                 .make-md-column(3);
+                .make-xs-column(6);
                 padding-left: 0;
             }
 
@@ -62,8 +78,7 @@
             .make-xs-column(3);
 
             #submitbutton {
-                .make-xs-column(3);
-                min-width: 115px;
+                width: 115px;
                 height: 100%;
                 border:none;
                 box-shadow: none;
@@ -75,5 +90,40 @@
         }
     }
 
+}
+
+@media screen and (max-width:@screen-sm-max) {
+    .login-container {
+        .row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        form {
+            #helprow {
+                padding-right: 0;
+                margin-top: 15px;
+
+                #checkboxfield {
+                    padding-right: 0;
+                }
+
+                #forgot_password{
+                    float: right;
+                    display: inline;
+                }
+            }
+
+            #fourthrow {
+                .make-row();
+                .make-xs-column(12);
+                text-align:center;
+
+            }
+
+        }
+
+
+
+    }
 }
 

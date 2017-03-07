@@ -21,14 +21,6 @@ function appendForgotPassword() {
   });
 }
 
-function wrapCheckboxText() {
-  $(document).ready(function(){
-    var elem = $("input[type=checkbox]")[0].nextSibling;
-    console.log(elem);
-    $(elem).wrap("<label id='lblforrememberme' for=''></label>");
-  });
-}
-
 function addIds() {
   $(document).ready(function() {
     var emailField = $(".field").has('input[type=text]');
@@ -39,8 +31,19 @@ function addIds() {
     chbxField.attr("id", "checkboxfield");
     var submit = $("input[type=submit]");
     submit.attr("id", "submitbutton");
+    var chbx = $("#checkboxfield input[type=checkbox]");
+    chbx.attr("id", "chbx");
   });
 }
+
+
+function wrapCheckboxText() {
+  $(document).ready(function(){
+    var elem = $("input[type=checkbox]")[0].nextSibling;
+    $(elem).wrap("<label id='lblforrememberme' for='chbx'></label>");
+  });
+}
+
 
 function customizeLoginButton() {
   $(document).ready(function() {

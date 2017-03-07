@@ -6792,6 +6792,13 @@ fieldset[disabled] .btn-secondary.focus {
   color: #CE0039;
   background-color: #fff;
 }
+.login-container {
+  min-width: 292px;
+  padding: 40px 15px;
+}
+.login-container input {
+  margin-bottom: 15px;
+}
 .login-container h3 {
   color: #363737;
   font-weight: 700;
@@ -6802,6 +6809,8 @@ fieldset[disabled] .btn-secondary.focus {
 }
 .login-container form #second_row #emailfield input {
   position: relative;
+  float: left;
+  width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -6814,6 +6823,8 @@ fieldset[disabled] .btn-secondary.focus {
 }
 .login-container form #second_row #passwordfield input {
   position: relative;
+  float: left;
+  width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -6831,6 +6842,8 @@ fieldset[disabled] .btn-secondary.focus {
 }
 .login-container form #helprow {
   position: relative;
+  float: left;
+  width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -6842,8 +6855,13 @@ fieldset[disabled] .btn-secondary.focus {
     width: 75%;
   }
 }
+.login-container form #helprow input {
+  margin-bottom: 10px;
+}
 .login-container form #helprow #checkboxfield {
   position: relative;
+  float: left;
+  width: 50%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -6880,13 +6898,7 @@ fieldset[disabled] .btn-secondary.focus {
   padding-right: 15px;
 }
 .login-container form #fourthrow #submitbutton {
-  position: relative;
-  float: left;
-  width: 25%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  min-width: 115px;
+  width: 115px;
   height: 100%;
   border: none;
   box-shadow: none;
@@ -6894,4 +6906,32 @@ fieldset[disabled] .btn-secondary.focus {
   -moz-box-shadow: none;
   -moz-transition: none;
   -webkit-transition: none;
+}
+@media screen and (max-width: 991px) {
+  .login-container .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .login-container form #helprow {
+    padding-right: 0;
+    margin-top: 15px;
+  }
+  .login-container form #helprow #checkboxfield {
+    padding-right: 0;
+  }
+  .login-container form #helprow #forgot_password {
+    float: right;
+    display: inline;
+  }
+  .login-container form #fourthrow {
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+  }
 }
