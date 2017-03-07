@@ -6800,3 +6800,32 @@ fieldset[disabled] .btn-secondary.focus {
   color: #A9ADAC;
   font-weight: 600;
 }
+.login-container form #second_row #emailfield input {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .login-container form #second_row #emailfield input {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.login-container form #second_row #passwordfield input {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .login-container form #second_row #passwordfield input {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .login-container form #second_row #passwordfield input {
+    margin-left: 8.33333333%;
+  }
+}
