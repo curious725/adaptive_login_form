@@ -6796,6 +6796,9 @@ fieldset[disabled] .btn-secondary.focus {
   min-width: 292px;
   padding: 40px 15px;
 }
+.login-container a {
+  text-decoration: underline;
+}
 .login-container input {
   margin-bottom: 15px;
 }
