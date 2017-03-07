@@ -6733,3 +6733,62 @@ button.close {
     display: none !important;
   }
 }
+/* buttons with mixins */
+.btn-secondary {
+  color: #fff;
+  background-color: #CE0039;
+  border-color: #CE0039;
+  font-family: 'sans-serif';
+}
+.btn-secondary:focus,
+.btn-secondary.focus {
+  color: #fff;
+  background-color: #9b002b;
+  border-color: #4f0016;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #9b002b;
+  border-color: #910028;
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary {
+  color: #fff;
+  background-color: #9b002b;
+  border-color: #910028;
+}
+.btn-secondary:active:hover,
+.btn-secondary.active:hover,
+.open > .dropdown-toggle.btn-secondary:hover,
+.btn-secondary:active:focus,
+.btn-secondary.active:focus,
+.open > .dropdown-toggle.btn-secondary:focus,
+.btn-secondary:active.focus,
+.btn-secondary.active.focus,
+.open > .dropdown-toggle.btn-secondary.focus {
+  color: #fff;
+  background-color: #770021;
+  border-color: #4f0016;
+}
+.btn-secondary:active,
+.btn-secondary.active,
+.open > .dropdown-toggle.btn-secondary {
+  background-image: none;
+}
+.btn-secondary.disabled:hover,
+.btn-secondary[disabled]:hover,
+fieldset[disabled] .btn-secondary:hover,
+.btn-secondary.disabled:focus,
+.btn-secondary[disabled]:focus,
+fieldset[disabled] .btn-secondary:focus,
+.btn-secondary.disabled.focus,
+.btn-secondary[disabled].focus,
+fieldset[disabled] .btn-secondary.focus {
+  background-color: #CE0039;
+  border-color: #CE0039;
+}
+.btn-secondary .badge {
+  color: #CE0039;
+  background-color: #fff;
+}
